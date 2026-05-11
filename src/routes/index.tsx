@@ -1,26 +1,30 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Hero } from "@/components/site/Hero";
+import { LogoMarquee } from "@/components/site/LogoMarquee";
+import { Solutions } from "@/components/site/Solutions";
+import { Services } from "@/components/site/Services";
+import { CTA } from "@/components/site/CTA";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Northwave — Creator-led marketing studio" },
+      { name: "description", content: "Scaling brands through creator-led marketing. High-performing campaigns, UGC, and creator partnerships." },
+      { property: "og:title", content: "Northwave — Creator-led marketing studio" },
+      { property: "og:description", content: "Scaling brands through creator-led marketing." },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <>
+      <Hero />
+      <LogoMarquee />
+      <Solutions />
+      <Services />
+      <CTA />
+    </>
+  );
 }
