@@ -19,7 +19,7 @@ export function CTA() {
           </div>
           <Link
             to="/contact"
-            className="group inline-flex w-fit items-center gap-2 rounded-full bg-foreground px-6 py-4 text-sm font-medium text-background transition hover:opacity-90"
+            className="group inline-flex w-fit items-center gap-2 rounded-full bg-gradient-to-r from-coral via-brand to-cyan px-6 py-4 text-sm font-medium text-brand-foreground shadow-lg transition hover:opacity-90"
           >
             Book a call
             <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
