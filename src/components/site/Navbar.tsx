@@ -1,13 +1,12 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Menu, X, Sparkles } from "lucide-react";
-import { ThemeToggle } from "./ThemeToggle";
+import { Menu, X } from "lucide-react";
+import oyankLogo from "@/assets/oyank-logo.png.asset.json";
 
 const links = [
   { to: "/", label: "Home" },
   { to: "/services", label: "Services" },
-  { to: "/campaigns", label: "Campaigns" },
-  { to: "/creators", label: "Creators" },
+  { to: "/creators", label: "Creator Network" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
@@ -31,11 +30,14 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-        <Link to="/" className="flex items-center gap-2 font-semibold tracking-tight">
-          <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-brand to-cyan text-brand-foreground">
-            <Sparkles className="h-4 w-4" />
-          </span>
-          <span className="text-base">Northwave</span>
+        <Link to="/" className="flex items-center" aria-label="Oyank Creatives home">
+          <img
+            src={oyankLogo.url}
+            alt="Oyank Creatives"
+            className="h-9 w-auto"
+            width={1024}
+            height={1024}
+          />
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
@@ -53,10 +55,9 @@ export function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-2 md:flex">
-          <ThemeToggle />
           <Link
             to="/contact"
-            className="inline-flex items-center rounded-full bg-foreground px-4 py-2 text-sm font-medium text-background transition hover:opacity-90"
+            className="inline-flex items-center rounded-full bg-gradient-to-r from-coral via-brand to-cyan px-4 py-2 text-sm font-medium text-brand-foreground shadow-sm transition hover:opacity-90"
           >
             Book a Call
           </Link>
@@ -84,16 +85,13 @@ export function Navbar() {
                 {l.label}
               </Link>
             ))}
-            <div className="mt-2 flex items-center justify-between">
-              <ThemeToggle />
-              <Link
-                to="/contact"
-                onClick={() => setOpen(false)}
-                className="inline-flex items-center rounded-full bg-foreground px-4 py-2 text-sm font-medium text-background"
-              >
-                Book a Call
-              </Link>
-            </div>
+            <Link
+              to="/contact"
+              onClick={() => setOpen(false)}
+              className="mt-2 inline-flex w-fit items-center rounded-full bg-gradient-to-r from-coral via-brand to-cyan px-4 py-2 text-sm font-medium text-brand-foreground"
+            >
+              Book a Call
+            </Link>
           </div>
         </div>
       )}
