@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import { SiInstagram, SiLinkedin, SiYoutube, SiX, SiReddit } from "react-icons/si";
+import { SiInstagram, SiYoutube, SiX, SiReddit } from "react-icons/si";
+import { FaLinkedinIn } from "react-icons/fa";
 import { Link } from "@tanstack/react-router";
 import heroImg from "@/assets/hero-creators.jpg";
 
 const platforms = [
   { icon: SiInstagram, label: "Instagram" },
-  { icon: SiLinkedin, label: "LinkedIn" },
+  { icon: FaLinkedinIn, label: "LinkedIn" },
   { icon: SiYoutube, label: "YouTube" },
   { icon: SiX, label: "X (Twitter)" },
   { icon: SiReddit, label: "Reddit" },
