@@ -29,7 +29,7 @@ function ContactPage() {
           </p>
           <div className="mt-10 space-y-4 text-sm">
             <div className="flex items-center gap-3 text-muted-foreground">
-              <Mail className="h-4 w-4" /> hello@northwave.studio
+              <Mail className="h-4 w-4" /> mayank@oyankcreatives.com
             </div>
             <div className="flex items-center gap-3 text-muted-foreground">
               <MapPin className="h-4 w-4" /> New York · London · Singapore
