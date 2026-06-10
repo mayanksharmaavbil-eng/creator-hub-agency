@@ -22,10 +22,10 @@ function ServicesPage() {
         <div className="mx-auto max-w-7xl">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand">Services</p>
           <h1 className="mt-4 max-w-4xl text-balance text-5xl font-semibold tracking-tight md:text-7xl">
-            Three practices. One operating system.
+            Campaigns built for attention.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-            Northwave blends strategy, media, and commerce so creator campaigns ship faster and perform harder.
+            Oyank Creatives blends influencer marketing, PR activations, and UGC so creator campaigns ship faster and stay memorable.
           </p>
         </div>
       </section>
