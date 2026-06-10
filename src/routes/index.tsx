@@ -8,10 +8,10 @@ import { CTA } from "@/components/site/CTA";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Northwave — Creator-led marketing studio" },
-      { name: "description", content: "Scaling brands through creator-led marketing. High-performing campaigns, UGC, and creator partnerships." },
-      { property: "og:title", content: "Northwave — Creator-led marketing studio" },
-      { property: "og:description", content: "Scaling brands through creator-led marketing." },
+      { title: "Oyank Creatives — Creator-led marketing studio" },
+      { name: "description", content: "Creator-led campaigns that get people talking. Influencer collaborations, PR activations, and meme campaigns that keep brands relevant." },
+      { property: "og:title", content: "Oyank Creatives — Creator-led marketing studio" },
+      { property: "og:description", content: "Creator-led campaigns that get people talking." },
     ],
   }),
   component: Index,
