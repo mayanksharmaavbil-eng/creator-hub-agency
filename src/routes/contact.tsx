@@ -5,10 +5,10 @@ import { useState } from "react";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Northwave" },
+      { title: "Contact — Oyank Creatives" },
       { name: "description", content: "Tell us about your brand. We'll come back with a creator roadmap inside 48 hours." },
-      { property: "og:title", content: "Contact — Northwave" },
-      { property: "og:description", content: "Start a creator-led campaign with Northwave." },
+      { property: "og:title", content: "Contact — Oyank Creatives" },
+      { property: "og:description", content: "Start a creator-led campaign with Oyank Creatives." },
     ],
   }),
   component: ContactPage,
