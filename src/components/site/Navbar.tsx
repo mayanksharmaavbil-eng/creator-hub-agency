@@ -29,12 +29,12 @@ export function Navbar() {
           : "border-b border-transparent bg-transparent"
       }`}
     >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
         <Link to="/" className="flex items-center" aria-label="Oyank Creatives home">
           <img
             src={oyankLogo.url}
             alt="Oyank Creatives"
-            className="h-11 w-auto md:h-12"
+            className="h-14 w-auto md:h-16"
             width={755}
             height={536}
           />
