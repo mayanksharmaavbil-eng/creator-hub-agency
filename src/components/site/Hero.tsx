@@ -95,22 +95,13 @@ export function Hero() {
           <div className="absolute -inset-6 -z-10 rounded-[2rem] bg-gradient-to-br from-coral/30 via-brand/20 to-cyan/20 blur-2xl" />
           <div className="overflow-hidden rounded-3xl border border-border/60 bg-card shadow-2xl">
             <img
-              src={heroImg}
-              alt="Creator collaboration content cards floating in a premium scene"
+              src={heroImg.url}
+              alt="Oyank Creatives campaign types — influencer, PR, UGC, meme and partnership campaigns"
               width={1280}
               height={1280}
               className="h-full w-full object-cover"
             />
           </div>
-          <motion.div
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6 }}
-            className="absolute -bottom-6 -left-6 hidden rounded-2xl border border-border/60 bg-card/90 p-4 shadow-xl backdrop-blur md:block"
-          >
-            <p className="text-xs text-muted-foreground">Always-on campaigns</p>
-            <p className="mt-1 text-sm font-medium">Built for attention</p>
-          </motion.div>
         </motion.div>
       </div>
     </section>
