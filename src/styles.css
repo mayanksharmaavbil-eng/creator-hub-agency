@@ -38,32 +38,32 @@
 
 :root {
   --radius: 1rem;
-  /* Warm, creative off-white surface with deep ink text */
-  --background: oklch(0.985 0.006 90);
-  --foreground: oklch(0.2 0.03 264);
+  /* Clean, refined neutral surface with deep ink text */
+  --background: oklch(0.99 0.003 250);
+  --foreground: oklch(0.22 0.02 264);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.2 0.03 264);
+  --card-foreground: oklch(0.22 0.02 264);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.2 0.03 264);
-  --primary: oklch(0.22 0.03 264);
-  --primary-foreground: oklch(0.98 0.01 90);
-  --secondary: oklch(0.96 0.012 80);
-  --secondary-foreground: oklch(0.22 0.03 264);
-  --muted: oklch(0.96 0.012 80);
-  --muted-foreground: oklch(0.5 0.025 270);
-  --accent: oklch(0.95 0.02 30);
-  --accent-foreground: oklch(0.22 0.03 264);
-  --destructive: oklch(0.6 0.22 27);
-  --destructive-foreground: oklch(0.98 0.01 90);
-  --border: oklch(0.9 0.012 80);
-  --input: oklch(0.92 0.012 80);
-  --ring: oklch(0.62 0.2 290);
-  /* Vibrant, creative brand palette */
-  --brand: oklch(0.6 0.23 285);      /* electric violet */
-  --brand-foreground: oklch(0.99 0.01 90);
-  --cyan: oklch(0.72 0.16 200);      /* bright azure */
-  --coral: oklch(0.7 0.2 25);        /* warm coral */
-  --sun: oklch(0.82 0.16 75);        /* sunny amber */
+  --popover-foreground: oklch(0.22 0.02 264);
+  --primary: oklch(0.28 0.04 264);
+  --primary-foreground: oklch(0.98 0.005 250);
+  --secondary: oklch(0.965 0.005 250);
+  --secondary-foreground: oklch(0.28 0.04 264);
+  --muted: oklch(0.965 0.005 250);
+  --muted-foreground: oklch(0.52 0.02 264);
+  --accent: oklch(0.96 0.012 264);
+  --accent-foreground: oklch(0.28 0.04 264);
+  --destructive: oklch(0.6 0.2 27);
+  --destructive-foreground: oklch(0.98 0.005 250);
+  --border: oklch(0.92 0.005 250);
+  --input: oklch(0.93 0.005 250);
+  --ring: oklch(0.55 0.1 264);
+  /* Refined, restrained brand palette — one accent, subtle tints */
+  --brand: oklch(0.52 0.11 264);     /* refined indigo */
+  --brand-foreground: oklch(0.99 0.005 250);
+  --cyan: oklch(0.58 0.08 240);      /* muted blue */
+  --coral: oklch(0.6 0.09 290);      /* soft muted violet */
+  --sun: oklch(0.72 0.08 80);        /* understated warm */
 }
 
 @layer base {
