@@ -1,15 +1,15 @@
-import backtrack from "@/assets/brands/backtrack.png";
-import novaLabs from "@/assets/brands/nova-labs.png";
-import peakFitness from "@/assets/brands/peak-fitness.png";
-import auraBeauty from "@/assets/brands/aura-beauty.png";
-import foodChain from "@/assets/brands/food-chain.png";
+import backtrack from "@/assets/brands/backtrack-learning.png.asset.json";
+import novaLabs from "@/assets/brands/nova-labs.jpg.asset.json";
+import peakFitness from "@/assets/brands/peak-fitness.jpg.asset.json";
+import auraBeauty from "@/assets/brands/aura-beauty-new.png.asset.json";
+import zentroFoods from "@/assets/brands/zentro-foods.png.asset.json";
 
 const brands = [
-  { src: backtrack, alt: "Backtrack Learning" },
-  { src: novaLabs, alt: "Nova Labs" },
-  { src: peakFitness, alt: "Peak Fitness" },
-  { src: auraBeauty, alt: "Aura Beauty" },
-  { src: foodChain, alt: "Food Chain" },
+  { src: backtrack.url, alt: "Backtrack Learning" },
+  { src: novaLabs.url, alt: "Nova Labs" },
+  { src: peakFitness.url, alt: "PeakFit Fitness and Wellness" },
+  { src: auraBeauty.url, alt: "Aura Beauty" },
+  { src: zentroFoods.url, alt: "Zentro Foods" },
 ];
 
 export function LogoMarquee() {
@@ -27,9 +27,7 @@ export function LogoMarquee() {
               src={b.src}
               alt={b.alt}
               loading="lazy"
-              width={1024}
-              height={512}
-              className="h-10 w-auto select-none object-contain opacity-60 grayscale transition hover:opacity-100 hover:grayscale-0 md:h-12"
+              className="h-9 w-auto select-none object-contain opacity-80 transition hover:opacity-100 md:h-11"
             />
           ))}
         </div>
