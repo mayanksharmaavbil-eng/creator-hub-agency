@@ -3,7 +3,7 @@ import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import oyankLogo from "@/assets/oyank-logo.png.asset.json";
 
 const socials = [
-  { Icon: FaInstagram, href: "https://www.instagram.com/oyank_creatives/", label: "Instagram" },
+  { Icon: FaInstagram, href: "https://www.instagram.com/oyankcreatives/", label: "Instagram" },
   { Icon: FaLinkedinIn, href: "https://www.linkedin.com/company/oyank-creatives/", label: "LinkedIn" },
 ];
 
@@ -14,7 +14,7 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
             <Link to="/" className="flex items-center" aria-label="Oyank Creatives home">
-              <img src={oyankLogo.url} alt="Oyank Creatives" className="h-10 w-auto" width={1024} height={1024} />
+              <img src={oyankLogo.url} alt="Oyank Creatives" className="h-14 w-auto" width={755} height={536} />
             </Link>
             <p className="mt-4 max-w-sm text-sm text-muted-foreground">
               Building brands through creators, culture, and community.
