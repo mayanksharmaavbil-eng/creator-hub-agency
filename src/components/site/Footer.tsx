@@ -3,7 +3,7 @@ import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import oyankLogo from "@/assets/oyank-logo.png.asset.json";
 
 const socials = [
-  { Icon: FaInstagram, href: "https://www.instagram.com/oyankcreatives/", label: "Instagram" },
+  { Icon: FaInstagram, href: "https://www.instagram.com/oyank_creatives/", label: "Instagram" },
   { Icon: FaLinkedinIn, href: "https://www.linkedin.com/company/oyank-creatives/", label: "LinkedIn" },
 ];
 
