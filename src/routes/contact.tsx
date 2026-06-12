@@ -32,7 +32,7 @@ function ContactPage() {
               <Mail className="h-4 w-4" /> mayank@oyankcreatives.com
             </div>
             <div className="flex items-center gap-3 text-muted-foreground">
-              <MapPin className="h-4 w-4" /> New York · London · Singapore
+              <MapPin className="h-4 w-4" /> India
             </div>
           </div>
         </div>
