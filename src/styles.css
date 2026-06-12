@@ -38,32 +38,30 @@
 
 :root {
   --radius: 1rem;
-  /* Deep navy dark theme with bright blue accent */
-  --background: #050816;
+  --background: #0A0A0A;
   --foreground: #FFFFFF;
-  --card: #0B1023;
+  --card: #171717;
   --card-foreground: #FFFFFF;
-  --popover: #0B1023;
+  --popover: #171717;
   --popover-foreground: #FFFFFF;
-  --primary: #4A9EFF;
-  --primary-foreground: #050816;
-  --secondary: #0F1730;
+  --primary: #5DA8FF;
+  --primary-foreground: #0A0A0A;
+  --secondary: #171717;
   --secondary-foreground: #FFFFFF;
-  --muted: #0F1730;
-  --muted-foreground: #A7B0C0;
-  --accent: #131C3A;
-  --accent-foreground: #FFFFFF;
+  --muted: #171717;
+  --muted-foreground: #B0B0B0;
+  --accent: #22D3EE;
+  --accent-foreground: #0A0A0A;
   --destructive: oklch(0.6 0.2 27);
   --destructive-foreground: #FFFFFF;
-  --border: #1B2440;
-  --input: #1B2440;
-  --ring: #4A9EFF;
-  /* Brand palette — bright blue accent with supporting tints */
-  --brand: #4A9EFF;
+  --border: #262626;
+  --input: #262626;
+  --ring: #5DA8FF;
+  --brand: #5DA8FF;
   --brand-foreground: #FFFFFF;
-  --cyan: #6BB3FF;
-  --coral: #7C8CFF;
-  --sun: #5AC8FA;
+  --cyan: #22D3EE;
+  --coral: #5DA8FF;
+  --sun: #5DA8FF;
 }
 
 @layer base {
