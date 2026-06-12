@@ -14,7 +14,7 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
             <Link to="/" className="flex items-center" aria-label="Oyank Creatives home">
-              <img src={oyankLogo.url} alt="Oyank Creatives" className="h-14 w-auto" width={755} height={536} />
+              <img src={oyankLogo.url} alt="Oyank Creatives" className="h-12 w-auto" width={755} height={536} />
             </Link>
             <p className="mt-4 max-w-sm text-sm text-muted-foreground">
               Building brands through creators, culture, and community.

@@ -34,7 +34,7 @@ export function Navbar() {
           <img
             src={oyankLogo.url}
             alt="Oyank Creatives"
-            className="h-14 w-auto md:h-16"
+            className="h-12 w-auto md:h-14"
             width={755}
             height={536}
           />
