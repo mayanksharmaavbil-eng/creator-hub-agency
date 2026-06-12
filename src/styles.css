@@ -92,7 +92,7 @@
   .ring-soft { box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--foreground) 8%, transparent); }
   /* Creative gradient text + surfaces */
   .text-gradient-creative {
-    background-image: linear-gradient(100deg, var(--coral), var(--brand) 55%, var(--cyan));
+    background-image: linear-gradient(100deg, #3B82F6, #2563EB 55%, #22D3EE);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
