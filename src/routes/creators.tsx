@@ -4,10 +4,10 @@ import { Users, LayoutGrid, Layers, LifeBuoy } from "lucide-react";
 import { CTA } from "@/components/site/CTA";
 
 const stats = [
-  { icon: Users, v: "50,000+", l: "Creator Network" },
-  { icon: LayoutGrid, v: "10+", l: "Categories" },
-  { icon: Layers, v: "Multi-Platform", l: "Coverage" },
-  { icon: LifeBuoy, v: "End-to-End", l: "Campaign Support" },
+  { icon: Users, v: "50,000+", l: "Creator Network", grad: "from-[#4F8CFF] to-[#22D3EE]" },
+  { icon: LayoutGrid, v: "10+", l: "Categories", grad: "from-[#22D3EE] to-[#4F8CFF]" },
+  { icon: Layers, v: "Multi-Platform", l: "Coverage", grad: "from-[#6366F1] to-[#4F8CFF]" },
+  { icon: LifeBuoy, v: "End-to-End", l: "Campaign Support", grad: "from-[#4F8CFF] to-[#8B5CF6]" },
 ];
 
 export const Route = createFileRoute("/creators")({
