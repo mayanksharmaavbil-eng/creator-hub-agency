@@ -15,8 +15,8 @@ const brands = [
 export function LogoMarquee() {
   const row = [...brands, ...brands, ...brands];
   return (
-    <section className="border-y border-border/60 bg-background py-14">
-      <p className="mb-8 text-center text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
+    <section className="border-y border-border/60 bg-white py-8">
+      <p className="mb-5 text-center text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
         Brands we've partnered with
       </p>
       <div className="marquee-pause group relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
