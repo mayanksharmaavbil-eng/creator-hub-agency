@@ -35,7 +35,7 @@ function Pill({ icon: Icon, label, i }: { icon: typeof Users; label: string; i: 
 
 export function Solutions() {
   return (
-    <section className="relative py-32">
+    <section className="relative bg-[#F5F9FF] py-32">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand">Solutions</p>
