@@ -53,7 +53,6 @@ function ContactPage() {
                 { label: "Name", name: "name", type: "text" },
                 { label: "Work email", name: "email", type: "email" },
                 { label: "Brand", name: "brand", type: "text" },
-                { label: "Budget", name: "budget", type: "text" },
               ].map((f) => (
                 <div key={f.name}>
                   <label className="text-xs font-medium uppercase tracking-widest text-muted-foreground">{f.label}</label>
@@ -65,6 +64,43 @@ function ContactPage() {
                   />
                 </div>
               ))}
+
+              <div>
+                <label className="text-xs font-medium uppercase tracking-widest text-muted-foreground">Campaign Objective</label>
+                <select
+                  required
+                  name="objective"
+                  className="mt-2 w-full rounded-xl border border-border/70 bg-background/40 px-4 py-3 text-sm outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/30 appearance-none"
+                  defaultValue=""
+                >
+                  <option value="" disabled>Select your objective</option>
+                  <option value="brand-awareness">Brand Awareness</option>
+                  <option value="product-launch">Product Launch</option>
+                  <option value="lead-gen">Lead Generation</option>
+                  <option value="app-installs">App Installs</option>
+                  <option value="sales">Sales / Conversions</option>
+                  <option value="retention">Retention / Re-engagement</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="text-xs font-medium uppercase tracking-widest text-muted-foreground">Budget Range</label>
+                <select
+                  required
+                  name="budget"
+                  className="mt-2 w-full rounded-xl border border-border/70 bg-background/40 px-4 py-3 text-sm outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/30 appearance-none"
+                  defaultValue=""
+                >
+                  <option value="" disabled>Select a range</option>
+                  <option value="under-10k">Under ₹10,000</option>
+                  <option value="10k-25k">₹10,000 – ₹25,000</option>
+                  <option value="25k-50k">₹25,000 – ₹50,000</option>
+                  <option value="50k-1l">₹50,000 – ₹1,00,000</option>
+                  <option value="1l-5l">₹1,00,000 – ₹5,00,000</option>
+                  <option value="above-5l">Above ₹5,00,000</option>
+                </select>
+              </div>
+
               <div>
                 <label className="text-xs font-medium uppercase tracking-widest text-muted-foreground">Project</label>
                 <textarea
