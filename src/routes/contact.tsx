@@ -17,7 +17,7 @@ export const Route = createFileRoute("/contact")({
 function ContactPage() {
   const [sent, setSent] = useState(false);
   return (
-    <section className="px-6 pt-40 pb-32">
+    <section className="bg-white px-6 pt-40 pb-32">
       <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[1fr_1.1fr]">
         <div>
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand">Contact</p>

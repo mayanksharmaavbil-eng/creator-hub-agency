@@ -15,7 +15,7 @@ const platforms = [
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden pt-32 pb-20">
+    <section className="relative overflow-hidden bg-[#F8FAFC] pt-32 pb-20">
       {/* vibrant ambient bg */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-0 h-[36rem] w-[60rem] -translate-x-1/2 rounded-full bg-brand/20 blur-[140px]" />

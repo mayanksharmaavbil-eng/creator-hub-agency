@@ -27,7 +27,7 @@ const cards = [
 
 export function Services() {
   return (
-    <section className="relative py-32">
+    <section className="relative bg-white py-32">
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <div className="max-w-2xl">
@@ -51,7 +51,7 @@ export function Services() {
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
               whileHover={{ y: -6 }}
-              className="group relative flex flex-col overflow-hidden rounded-3xl border border-border/60 bg-card p-8 shadow-sm transition hover:border-brand/40 hover:shadow-2xl"
+              className="group relative flex flex-col overflow-hidden rounded-3xl border border-[#D9E5F5] bg-white p-8 shadow-[0_10px_30px_rgba(0,0,0,0.05)] transition hover:border-brand/40 hover:shadow-2xl"
             >
               <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-br from-coral/0 via-transparent to-cyan/0 opacity-0 transition-opacity duration-500 group-hover:from-coral/10 group-hover:to-cyan/10 group-hover:opacity-100" />
 

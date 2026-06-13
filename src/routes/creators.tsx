@@ -4,10 +4,10 @@ import { Users, LayoutGrid, Layers, LifeBuoy } from "lucide-react";
 import { CTA } from "@/components/site/CTA";
 
 const stats = [
-  { icon: Users, v: "50,000+", l: "Creator Network" },
-  { icon: LayoutGrid, v: "10+", l: "Categories" },
-  { icon: Layers, v: "Multi-Platform", l: "Coverage" },
-  { icon: LifeBuoy, v: "End-to-End", l: "Campaign Support" },
+  { icon: Users, v: "50,000+", l: "Creator Network", grad: "from-[#4F8CFF] to-[#22D3EE]" },
+  { icon: LayoutGrid, v: "10+", l: "Categories", grad: "from-[#22D3EE] to-[#4F8CFF]" },
+  { icon: Layers, v: "Multi-Platform", l: "Coverage", grad: "from-[#6366F1] to-[#4F8CFF]" },
+  { icon: LifeBuoy, v: "End-to-End", l: "Campaign Support", grad: "from-[#4F8CFF] to-[#8B5CF6]" },
 ];
 
 export const Route = createFileRoute("/creators")({
@@ -25,7 +25,7 @@ export const Route = createFileRoute("/creators")({
 function CreatorsPage() {
   return (
     <>
-      <section className="px-6 pt-40 pb-16">
+      <section className="bg-[#F5F9FF] px-6 pt-40 pb-16">
         <div className="mx-auto max-w-7xl">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand">Creator Network</p>
           <h1 className="mt-4 max-w-4xl text-balance text-5xl font-semibold tracking-tight md:text-7xl">
@@ -38,7 +38,7 @@ function CreatorsPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-24">
+      <section className="bg-[#F5F9FF] px-6 pb-24">
         <div className="mx-auto grid max-w-7xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((s, i) => (
             <motion.div
@@ -47,9 +47,10 @@ function CreatorsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.06 }}
-              className="rounded-2xl border border-border/60 bg-card p-6 shadow-sm"
+              whileHover={{ y: -6 }}
+              className="group rounded-2xl border border-[#D9E5F5] bg-white p-6 shadow-[0_10px_30px_rgba(0,0,0,0.05)] transition hover:border-brand/40 hover:shadow-2xl"
             >
-              <span className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br from-coral via-brand to-cyan text-brand-foreground shadow">
+              <span className={`grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br ${s.grad} text-brand-foreground shadow-lg transition group-hover:scale-110`}>
                 <s.icon className="h-5 w-5" />
               </span>
               <p className="mt-6 text-3xl font-semibold tracking-tight">{s.v}</p>
