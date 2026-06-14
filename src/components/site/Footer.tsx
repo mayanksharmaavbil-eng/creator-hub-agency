@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import oyankLogo from "@/assets/oyank-logo.png.asset.json";
+import oyankLogo from "@/assets/oyank-logo.png";
 
 const socials = [
   { Icon: FaInstagram, href: "https://www.instagram.com/oyank_creatives/", label: "Instagram" },
