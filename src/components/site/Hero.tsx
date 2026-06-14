@@ -95,7 +95,7 @@ export function Hero() {
           <div className="absolute -inset-6 -z-10 rounded-[2rem] bg-gradient-to-br from-coral/30 via-brand/20 to-cyan/20 blur-2xl" />
           <div className="overflow-hidden rounded-3xl border border-border/60 bg-card shadow-2xl">
             <img
-              src={heroImg.url}
+              src={heroImg}
               alt="Oyank Creatives campaign types — influencer, PR, UGC, meme and partnership campaigns"
               width={1280}
               height={1280}
