@@ -1,15 +1,15 @@
-import backtrack from "@/assets/brands/backtrack-learning.png.asset.json";
-import novaLabs from "@/assets/brands/nova-labs.jpg.asset.json";
-import peakFitness from "@/assets/brands/peak-fitness.jpg.asset.json";
-import auraBeauty from "@/assets/brands/aura-beauty-new.png.asset.json";
-import zentroFoods from "@/assets/brands/zentro-foods.png.asset.json";
+import backtrack from "@/assets/brands/backtrack-learning.png";
+import novaLabs from "@/assets/brands/nova-labs.jpg";
+import peakFitness from "@/assets/brands/peak-fitness.jpg";
+import auraBeauty from "@/assets/brands/aura-beauty-new.png";
+import zentroFoods from "@/assets/brands/zentro-foods.png";
 
 const brands = [
-  { src: backtrack.url, alt: "Backtrack Learning" },
-  { src: novaLabs.url, alt: "Nova Labs" },
-  { src: peakFitness.url, alt: "PeakFit Fitness and Wellness" },
-  { src: auraBeauty.url, alt: "Aura Beauty" },
-  { src: zentroFoods.url, alt: "Zentro Foods" },
+  { src: backtrack, alt: "Backtrack Learning" },
+  { src: novaLabs, alt: "Nova Labs" },
+  { src: peakFitness, alt: "PeakFit Fitness and Wellness" },
+  { src: auraBeauty, alt: "Aura Beauty" },
+  { src: zentroFoods, alt: "Zentro Foods" },
 ];
 
 export function LogoMarquee() {
