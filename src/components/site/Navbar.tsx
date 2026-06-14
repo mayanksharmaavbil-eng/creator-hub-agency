@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import oyankLogo from "@/assets/oyank-logo.png.asset.json";
+import oyankLogo from "@/assets/oyank-logo.png";
 
 const links = [
   { to: "/", label: "Home" },
@@ -32,7 +32,7 @@ export function Navbar() {
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
         <Link to="/" className="flex items-center" aria-label="Oyank Creatives home">
           <img
-            src={oyankLogo.url}
+            src={oyankLogo}
             alt="Oyank Creatives"
             className="h-12 w-auto md:h-14"
             width={755}

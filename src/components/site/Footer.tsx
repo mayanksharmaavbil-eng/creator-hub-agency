@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import oyankLogo from "@/assets/oyank-logo.png.asset.json";
+import oyankLogo from "@/assets/oyank-logo.png";
 
 const socials = [
   { Icon: FaInstagram, href: "https://www.instagram.com/oyank_creatives/", label: "Instagram" },
@@ -14,7 +14,7 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
             <Link to="/" className="flex items-center" aria-label="Oyank Creatives home">
-              <img src={oyankLogo.url} alt="Oyank Creatives" className="h-12 w-auto" width={755} height={536} />
+              <img src={oyankLogo} alt="Oyank Creatives" className="h-12 w-auto" width={755} height={536} />
             </Link>
             <p className="mt-4 max-w-sm text-sm text-muted-foreground">
               Building brands through creators, culture, and community.
