@@ -74,7 +74,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Oyank Creatives — Creator-led marketing studio" },
+      { title: "Oyank Creatives | Influencer Marketing Agency" },
       { name: "description", content: "Building brands through creators, culture, and community. Influencer marketing, PR activations, meme campaigns, and UGC." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
