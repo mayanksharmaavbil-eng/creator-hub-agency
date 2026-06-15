@@ -8,9 +8,9 @@ import { CTA } from "@/components/site/CTA";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Oyank Creatives — Creator-led marketing studio" },
+      { title: "Oyank Creatives | Influencer Marketing Agency" },
       { name: "description", content: "Creator-led campaigns that get people talking. Influencer collaborations, PR activations, and meme campaigns that keep brands relevant." },
-      { property: "og:title", content: "Oyank Creatives — Creator-led marketing studio" },
+      { property: "og:title", content: "Oyank Creatives | Influencer Marketing Agency" },
       { property: "og:description", content: "Creator-led campaigns that get people talking." },
     ],
   }),
