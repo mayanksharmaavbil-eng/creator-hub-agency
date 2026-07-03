@@ -97,8 +97,11 @@ export function Hero() {
             <img
               src={heroImg}
               alt="Oyank Creatives campaign types — influencer, PR, UGC, meme and partnership campaigns"
-              width={1280}
-              height={1280}
+              width={1000}
+              height={1000}
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
               className="h-full w-full object-cover"
             />
           </div>
