@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { SiInstagram, SiYoutube, SiX, SiReddit } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Link } from "@tanstack/react-router";
-import heroImg from "@/assets/hero-creators.png";
+import heroImg from "@/assets/hero-creators.webp";
 
 const platforms = [
   { icon: SiInstagram, label: "Instagram" },
@@ -97,8 +97,11 @@ export function Hero() {
             <img
               src={heroImg}
               alt="Oyank Creatives campaign types — influencer, PR, UGC, meme and partnership campaigns"
-              width={1280}
-              height={1280}
+              width={1000}
+              height={1000}
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
               className="h-full w-full object-cover"
             />
           </div>
