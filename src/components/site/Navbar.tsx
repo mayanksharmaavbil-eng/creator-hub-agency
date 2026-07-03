@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import oyankLogo from "@/assets/oyank-logo.png";
+import oyankLogo from "@/assets/oyank-logo.webp";
 
 const links = [
   { to: "/", label: "Home" },
@@ -37,6 +37,8 @@ export function Navbar() {
             className="h-12 w-auto md:h-14"
             width={755}
             height={536}
+            fetchPriority="high"
+            decoding="async"
           />
         </Link>
 
