@@ -1,8 +1,8 @@
-import backtrack from "@/assets/brands/backtrack-learning.png";
-import novaLabs from "@/assets/brands/nova-labs.jpg";
-import peakFitness from "@/assets/brands/peak-fitness.jpg";
-import auraBeauty from "@/assets/brands/aura-beauty-new.png";
-import zentroFoods from "@/assets/brands/zentro-foods.png";
+import backtrack from "@/assets/brands/backtrack-learning.webp";
+import novaLabs from "@/assets/brands/nova-labs.webp";
+import peakFitness from "@/assets/brands/peak-fitness.webp";
+import auraBeauty from "@/assets/brands/aura-beauty.webp";
+import zentroFoods from "@/assets/brands/zentro-foods.webp";
 
 const brands = [
   { src: backtrack, alt: "Backtrack Learning" },
@@ -27,6 +27,7 @@ export function LogoMarquee() {
               src={b.src}
               alt={b.alt}
               loading="lazy"
+              decoding="async"
               className="h-9 w-auto select-none object-contain opacity-80 transition hover:opacity-100 md:h-11"
             />
           ))}
