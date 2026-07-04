@@ -26,7 +26,9 @@ export function LogoMarquee() {
               key={i}
               src={b.src}
               alt={b.alt}
-              loading="lazy"
+              width={520}
+              height={140}
+              loading={i < brands.length ? "eager" : "lazy"}
               decoding="async"
               className="h-9 w-auto select-none object-contain opacity-80 transition hover:opacity-100 md:h-11"
             />

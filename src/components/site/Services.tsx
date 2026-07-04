@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Users, Flame, TrendingUp, ArrowUpRight } from "lucide-react";
 
 const cards = [
@@ -43,15 +42,10 @@ export function Services() {
         </div>
 
         <div className="mt-14 grid gap-6 md:grid-cols-3">
-          {cards.map((c, i) => (
-            <motion.article
+          {cards.map((c) => (
+            <article
               key={c.title}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.5, delay: i * 0.08 }}
-              whileHover={{ y: -6 }}
-              className="group relative flex flex-col overflow-hidden rounded-3xl border border-[#D9E5F5] bg-white p-8 shadow-[0_10px_30px_rgba(0,0,0,0.05)] transition hover:border-brand/40 hover:shadow-2xl"
+              className="group relative flex flex-col overflow-hidden rounded-3xl border border-[#D9E5F5] bg-white p-8 shadow-[0_10px_30px_rgba(0,0,0,0.05)] transition hover:-translate-y-1 hover:border-brand/40 hover:shadow-2xl"
             >
               <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-br from-coral/0 via-transparent to-cyan/0 opacity-0 transition-opacity duration-500 group-hover:from-coral/10 group-hover:to-cyan/10 group-hover:opacity-100" />
 
@@ -72,7 +66,7 @@ export function Services() {
                 <span className="h-1.5 w-1.5 rounded-full bg-brand" />
                 <span className="font-medium">{c.note}</span>
               </div>
-            </motion.article>
+            </article>
           ))}
         </div>
       </div>

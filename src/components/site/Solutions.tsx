@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import {
   Users, Megaphone, Laugh, Video, Handshake,
   Sparkles, Gift, Target,
@@ -17,19 +16,14 @@ const items = [
 
 function Pill({ icon: Icon, label, i }: { icon: typeof Users; label: string; i: number }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 10 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.4, delay: (i % 4) * 0.05 }}
-      whileHover={{ y: -3 }}
-      className="group flex shrink-0 items-center gap-3 rounded-full border border-border/60 bg-card px-5 py-3 shadow-sm transition hover:border-brand/50 hover:shadow-lg"
+    <div
+      className="group flex shrink-0 items-center gap-3 rounded-full border border-border/60 bg-card px-5 py-3 shadow-sm transition hover:-translate-y-0.5 hover:border-brand/50 hover:shadow-lg"
     >
       <span className="grid h-8 w-8 place-items-center rounded-full bg-gradient-to-br from-coral/20 via-brand/20 to-cyan/20 text-brand transition group-hover:from-coral group-hover:via-brand group-hover:to-cyan group-hover:text-brand-foreground">
         <Icon className="h-4 w-4" />
       </span>
       <span className="whitespace-nowrap text-sm font-medium">{label}</span>
-    </motion.div>
+    </div>
   );
 }
 
