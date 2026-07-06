@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import oyankLogo from "@/assets/oyank-logo.webp";
+
+const oyankLogo = "/assets/oyank-logo-header.webp";
 
 const links = [
   { to: "/", label: "Home" },
@@ -35,9 +36,10 @@ export function Navbar() {
             src={oyankLogo}
             alt="Oyank Creatives"
             className="h-12 w-auto md:h-14"
-            width={755}
-            height={536}
+            width={220}
+            height={156}
             fetchPriority="high"
+            loading="eager"
             decoding="async"
           />
         </Link>

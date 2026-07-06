@@ -81,24 +81,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      // Non-render-blocking font load: paints immediately with system-ui fallback,
-      // then swaps in Inter once the stylesheet arrives (critical on slow mobile networks).
-      {
-        rel: "preload",
-        as: "style",
-        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap",
-      },
     ],
     scripts: [
       {
-        // Load Inter without blocking first paint.
-        children: `(function(){var l=document.createElement('link');l.rel='stylesheet';l.href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap';l.media='print';l.onload=function(){this.media='all'};document.head.appendChild(l);})();`,
-      },
-      {
-        // Defer the Facebook Pixel until the page is interactive so it never
-        // competes with content for the first connections on mobile.
+        // Keep tracking away from first paint on slow mobile connections.
         children: `(function(){function load(){!function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -109,7 +95,10 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '2061748674623591');
 fbq('track', 'PageView');}
-if(document.readyState==='complete'){setTimeout(load,1200);}else{window.addEventListener('load',function(){setTimeout(load,1200);});}})();`,
+var run=function(){setTimeout(load,8000)};
+if('requestIdleCallback' in window){requestIdleCallback(run,{timeout:12000});}
+else if(document.readyState==='complete'){run();}
+else{window.addEventListener('load',run,{once:true});}})();`,
       },
     ],
   }),

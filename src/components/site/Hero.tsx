@@ -2,7 +2,9 @@ import { ArrowRight } from "lucide-react";
 import { SiInstagram, SiYoutube, SiX, SiReddit } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Link } from "@tanstack/react-router";
-import heroImg from "@/assets/hero-creators.webp";
+
+const heroMobile = "/assets/hero-creators-mobile.webp";
+const heroDesktop = "/assets/hero-creators-desktop.webp";
 
 const platforms = [
   { icon: SiInstagram, label: "Instagram" },
@@ -67,18 +69,19 @@ export function Hero() {
 
         <div className="relative mx-auto w-full max-w-[22rem] md:max-w-none">
           <div className="absolute -inset-6 -z-10 rounded-[2rem] bg-gradient-to-br from-coral/30 via-brand/20 to-cyan/20 blur-2xl" />
-          <div className="overflow-hidden rounded-3xl border border-border/60 bg-card shadow-2xl">
+          <picture className="block overflow-hidden rounded-3xl border border-border/60 bg-card shadow-2xl">
+            <source media="(min-width: 768px)" srcSet={heroDesktop} width={760} height={760} />
             <img
-              src={heroImg}
+              src={heroMobile}
               alt="Oyank Creatives campaign types — influencer, PR, UGC, meme and partnership campaigns"
-              width={1000}
-              height={1000}
+              width={420}
+              height={420}
               loading="eager"
               fetchPriority="high"
               decoding="async"
               className="h-full w-full object-cover"
             />
-          </div>
+          </picture>
         </div>
       </div>
     </section>
