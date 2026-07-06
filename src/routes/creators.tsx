@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { motion } from "framer-motion";
 import { Users, LayoutGrid, Layers, LifeBuoy } from "lucide-react";
 import { CTA } from "@/components/site/CTA";
 
@@ -41,21 +40,16 @@ function CreatorsPage() {
       <section className="bg-[#F5F9FF] px-6 pb-24">
         <div className="mx-auto grid max-w-7xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((s, i) => (
-            <motion.div
+            <div
               key={s.l}
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.06 }}
-              whileHover={{ y: -6 }}
-              className="group rounded-2xl border border-[#D9E5F5] bg-white p-6 shadow-[0_10px_30px_rgba(0,0,0,0.05)] transition hover:border-brand/40 hover:shadow-2xl"
+              className="group rounded-2xl border border-[#D9E5F5] bg-white p-6 shadow-[0_10px_30px_rgba(0,0,0,0.05)] transition hover:-translate-y-1 hover:border-brand/40 hover:shadow-2xl"
             >
               <span className={`grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br ${s.grad} text-brand-foreground shadow-lg transition group-hover:scale-110`}>
                 <s.icon className="h-5 w-5" />
               </span>
               <p className="mt-6 text-3xl font-semibold tracking-tight">{s.v}</p>
               <p className="mt-1 text-sm text-muted-foreground">{s.l}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>
