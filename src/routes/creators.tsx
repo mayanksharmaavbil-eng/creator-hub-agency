@@ -39,7 +39,7 @@ function CreatorsPage() {
 
       <section className="bg-[#F5F9FF] px-6 pb-24">
         <div className="mx-auto grid max-w-7xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {stats.map((s, i) => (
+          {stats.map((s) => (
             <div
               key={s.l}
               className="group rounded-2xl border border-[#D9E5F5] bg-white p-6 shadow-[0_10px_30px_rgba(0,0,0,0.05)] transition hover:-translate-y-1 hover:border-brand/40 hover:shadow-2xl"
