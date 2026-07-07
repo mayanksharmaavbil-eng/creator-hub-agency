@@ -1,11 +1,10 @@
 import { Link } from "@tanstack/react-router";
-import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const oyankLogo = "/assets/oyank-logo-header.webp";
 
 const socials = [
-  { Icon: FaInstagram, href: "https://www.instagram.com/oyank_creatives/", label: "Instagram" },
-  { Icon: FaLinkedinIn, href: "https://www.linkedin.com/company/oyank-creatives/", label: "LinkedIn" },
+  { text: "IG", href: "https://www.instagram.com/oyank_creatives/", label: "Instagram" },
+  { text: "in", href: "https://www.linkedin.com/company/oyank-creatives/", label: "LinkedIn" },
 ];
 
 export function Footer() {
@@ -40,7 +39,7 @@ export function Footer() {
           <div>
             <h4 className="text-xs font-medium uppercase tracking-widest text-muted-foreground">Follow</h4>
             <div className="mt-4 flex gap-2">
-              {socials.map(({ Icon, href, label }) => (
+              {socials.map(({ text, href, label }) => (
                 <a
                   key={label}
                   href={href}
@@ -49,7 +48,7 @@ export function Footer() {
                   className="grid h-9 w-9 place-items-center rounded-full border border-border/60 text-muted-foreground transition hover:text-foreground hover:bg-accent"
                   aria-label={label}
                 >
-                  <Icon className="h-4 w-4" />
+                  <span className="text-xs font-semibold">{text}</span>
                 </a>
               ))}
             </div>

@@ -1,4 +1,3 @@
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
   Link,
@@ -69,7 +68,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
-export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
+export const Route = createRootRouteWithContext<{}>()({
   head: () => ({
     meta: [
       { charSet: "utf-8" },
@@ -81,25 +80,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-    ],
-    scripts: [
-      {
-        // Keep tracking away from first paint on slow mobile connections.
-        children: `(function(){function load(){!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2061748674623591');
-fbq('track', 'PageView');}
-var run=function(){setTimeout(load,8000)};
-if('requestIdleCallback' in window){requestIdleCallback(run,{timeout:12000});}
-else if(document.readyState==='complete'){run();}
-else{window.addEventListener('load',run,{once:true});}})();`,
-      },
     ],
   }),
   shellComponent: RootShell,
@@ -115,15 +95,6 @@ function RootShell({ children }: { children: React.ReactNode }) {
         <HeadContent />
       </head>
       <body>
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=2061748674623591&ev=PageView&noscript=1"
-            alt=""
-          />
-        </noscript>
         {children}
         <Scripts />
       </body>
@@ -132,15 +103,13 @@ function RootShell({ children }: { children: React.ReactNode }) {
 }
 
 function RootComponent() {
-  const { queryClient } = Route.useRouteContext();
-
   return (
-    <QueryClientProvider client={queryClient}>
+    <>
       <Navbar />
       <main className="min-h-screen">
         <Outlet />
       </main>
       <Footer />
-    </QueryClientProvider>
+    </>
   );
 }
