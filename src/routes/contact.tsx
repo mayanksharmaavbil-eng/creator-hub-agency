@@ -47,14 +47,6 @@ function ContactPage() {
     const result = await response.json();
 
     if (result.success) {
-      // Fire Meta Lead Event
-      if (
-        typeof window !== "undefined" &&
-        (window as any).fbq
-      ) {
-        (window as any).fbq("track", "Lead");
-      }
-
       setSent(true);
       e.currentTarget.reset();
     } else {
@@ -234,5 +226,3 @@ function ContactPage() {
     </section>
   );
 }
-
-export default ContactPage;
